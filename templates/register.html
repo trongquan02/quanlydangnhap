@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text-center text-danger">DANG KY</h1>
+    <form method="post" action="{{ url_for('user_register') }}">
+        <div class="from-group">
+            <label for="username">Ten Dang Nhap</label>
+            <input type="text" class="from-control"  name="username" id="username" required> 
+        </div>
+        <div class="from-group">
+            <label for="pass">mat khau</label>
+            <input type="number" class="from-control"  name="passwork" id="pass" required> 
+        </div>
+        <div class="from-group">
+            <label for="confirm">xach nhan mat khau</label>
+            <input type="number" class="from-control"  name="passwork" id="confirm" required> 
+        </div>
+        <input type="submit" value="Dang ky" class="btn btn-danger">
+    </form>
+</body>
+</html>

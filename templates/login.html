@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    </head>
+<body>
+    <div class="login-form">
+      <form action="/login" method="post">
+          <h1>Login</h1>
+          <div class="content">
+            <div class="input-field">
+              <input type="text" placeholder="Email" name="inputEmail" autocomplete="nope" required>
+              {% if message_email %}
+                <span style="color: red">{{ message_email }}</span>
+              {% endif %}
+            </div>
+            <div class="input-field">
+              <input type="number" placeholder="Password" name="pass" autocomplete="new-password" required>
+              {% if message_pass %}
+                <span style="color: rgb(255, 0, 0)" >{{ message_pass }}</span>
+              {% endif %}
+            </div>
+            <a href="#" class="link">Forgot Your Password?</a>
+          </div>
+          <div class="action">
+            <button>Register</button>
+            <button>Submit</button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
